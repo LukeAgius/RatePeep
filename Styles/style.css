@@ -1,0 +1,72 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Header, #Footer{
+    box-shadow: 0px 1px 50px #5E5E5E;
+    padding: 10px 0px 0px 10px;
+    background-color:#262626;
+    position:fixed;
+    color:#FFFFFF;
+    width:100%;
+    left:0px;
+}
+
+#Header{
+    height:40px;
+    left:0px;
+    top:0px;    
+}
+
+#Header img{
+    position:fixed;
+    width:44px;
+    left:0px;
+    top:0px;
+}
+
+#Footer{
+    font-size: 10px;
+    height:20px;
+    bottom:0px;
+}
+
+#Footer a{
+    color:#FF0000;
+}
+#Footer a:hover{
+    color:#FFF000;
+}
+
+#RateView {
+    width: 1300px;
+    height: 100px;
+    margin: -70px 0 0 -170px;
+    position: absolute;
+    top: 20%; left: 40%;
+}
+
+#RatesValues{
+  font-size: 50px;   
+}
+
+#AmountInput{
+    margin-bottom: 160px;
+    font-size: 20px; 
+}
+
+#RateView input[type=text],
+#RateView input[type=text]:hover,
+#RateView input[type=text]:focus,
+#RateView input[type=text]:active
+{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1;
+    outline: none;
+    outline-offset: 0;
+    background-color:transparent;
+    font-size: 45px;
+}
+
