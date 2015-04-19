@@ -38,8 +38,8 @@
 			// Passing selected currencies from URL
 			$scope.baseCurr = $routeParams.fromCurrency.toUpperCase();
 			$scope.convCurr = $routeParams.toCurrency.toUpperCase();
-			$scope.baseCurrSymbol = getCurrencySymbol[$routeParams.fromCurrency.toUpperCase()];
-			$scope.convCurrSymbol = getCurrencySymbol[$routeParams.toCurrency.toUpperCase()];
+			$scope.baseCurrSymbol = getCurrencySymbol[$scope.baseCurr];
+			$scope.convCurrSymbol = getCurrencySymbol[$scope.convCurr];
 
 			// Getting fromCurrency as base					  
 			$http.get("http://api.fixer.io/latest?base="+$scope.baseCurr+"&symbols="+$scope.convCurr)
