@@ -1,8 +1,8 @@
 <span id="AmountInput">
-	Amount : {{baseCurrSymbol}} <input type="text" ng-model="Amount" id="myAmount" ng-focus="">
+	Amount : {{baseCurrSymbol}} <input type="text" ng-model="Amount" id="myAmount">
 </span>
 
-<div id="RatesValues" ng-show="Amount">
+<div id="RatesValues" ng-show="isNumber(Amount)">
 	<table>
 		<tr>
 			<td>{{baseCurrSymbol}} {{Amount | number}}</td>
